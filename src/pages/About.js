@@ -20,16 +20,16 @@ const About = () => {
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae cum
         doloremque autem placeat, facilis consequatour repellat suscipit
-        voluptatem. Laboriosam explicabo dolores iusto numquam. Earum excepturi,
-        blanditiis repudiandae animi deserunt cum laboriosam perferendis ab
-        commodi ea ullam enim nihil quasi magni laudantium voluptatibus
-        aspernatur recusandae illum neque, reprehenderit consequuntur facilis
-        adipisci expedita assumenda! Cum labore accusamus ullam autem voluptas
-        expedita tenetur repudiandae culpa! Aliquid, est reprehenderit accusamus
-        modi nostrum laudantium facere facilis quidem? Hic velit, nisi error
-        aliquam, repellendus rem dicta id illum labore perspiciatis qui enim
-        possimus. Unde labore harum nobis quis, laboriosam illo non? Ea officia
-        placeat porro deleniti?
+        voluptatem. Labouriosam explicabo dolores iusto numquam. Earum
+        excepturi, blanditiis repudiandae animi deserunt cum laboriosam
+        perferendis ab commodi ea ullam enim nihil quasi magni laudantium
+        voluptatibus aspernatur recusandae illum neque, reprehenderit
+        consequuntur facilis adipisci expedita assumenda! Cum labore accusamus
+        ullam autem voluptas expedita tenetur repudiandae culpa! Aliquid, est
+        reprehenderit accusamus modi nostrum laudantium facere facilis quidem?
+        Hic velit, nisi error aliquam, repellendus rem dicta id illum labore
+        perspiciatis qui enim possimus. Unde labore harum nobis quis, laboriosam
+        illo non? Ea officia placeat porro deleniti?
       </p>
     </div>
   );
