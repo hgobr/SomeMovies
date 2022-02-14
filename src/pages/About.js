@@ -19,7 +19,7 @@ const About = () => {
       <br />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae cum
-        doloremque autem placeat, facilis consequatur repellat suscipit
+        doloremque autem placeat, facilis consequatour repellat suscipit
         voluptatem. Laboriosam explicabo dolores iusto numquam. Earum excepturi,
         blanditiis repudiandae animi deserunt cum laboriosam perferendis ab
         commodi ea ullam enim nihil quasi magni laudantium voluptatibus
