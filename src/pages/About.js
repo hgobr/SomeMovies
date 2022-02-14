@@ -14,7 +14,7 @@ const About = () => {
         quibusdam sed ea, iste sapiente a nesciunt modi voluptas earum
         laudantium alias ipsa assumenda incidunt, rem doloremque id neque
         repudiandae? Repellendus laborum sunt vel, adipisci impedit sequi dolore
-        quae quidem illum distinctio atque!
+        quae quidem illum distinctio atquem!
       </p>
       <br />
       <p>
