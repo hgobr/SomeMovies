@@ -1,3 +1,3 @@
 # Some Movies
 
-** Application de sélection de films avec React **
+**Application de sélection de films avec React**
