@@ -1,0 +1,17 @@
+.navigation {
+  margin: 3rem 0;
+
+  a {
+    margin: 1rem;
+    padding: 1rem;
+    position: relative;
+  }
+
+  a:hover {
+    transform: scale(1.5);
+  }
+
+  .activated {
+    color: $color4;
+  }
+}
