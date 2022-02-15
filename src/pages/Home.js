@@ -1,5 +1,5 @@
+import Form from '../components/Form';
 import Logo from '../components/Logo';
-import Movies from '../components/Movies';
 import Navigation from '../components/Navigation';
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
     <div className="home">
       <Navigation />
       <Logo />
-      <Movies />
+      <Form />
     </div>
   );
 };
