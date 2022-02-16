@@ -7,7 +7,7 @@ const About = () => {
     <div>
       <Navigation />
       <Logo />
-      <h1>À propos</h1>
+      <h1>Vos favoris</h1>
       <br />
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa

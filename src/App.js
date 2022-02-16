@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import About from './pages/About';
+import Fav from './pages/Fav';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 
@@ -9,7 +9,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/fav" element={<Fav />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
