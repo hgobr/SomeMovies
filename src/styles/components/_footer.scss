@@ -14,15 +14,16 @@ footer {
 
     img {
       width: 40px;
-      margin-right: 0.5rem;
+      margin-right: 0.2rem;
     }
   }
 
   .footerText {
     display: flex;
     flex-direction: column;
-    margin: 0.75rem 0;
+    margin: 1rem 0;
     text-transform: uppercase;
+    font-size: 1rem;
   }
 
   .footerLinks {

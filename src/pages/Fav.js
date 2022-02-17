@@ -8,7 +8,7 @@ const About = () => {
     <div className="fav">
       <Navigation />
       <Logo />
-      <h1>Vos favoris</h1>
+      <h1 style={{ textAlign: 'center' }}>Vos favoris</h1>
       <Footer />
     </div>
   );

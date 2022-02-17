@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <div className="logo">
       <img src="./img/popcorn01.png" alt="logo" />
-      <h3>Some Movies</h3>
+      <h2>Some Movies</h2>
     </div>
   );
 };

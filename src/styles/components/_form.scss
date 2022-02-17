@@ -62,7 +62,11 @@
     }
   }
   .result {
+    margin-top: 3rem;
     padding-bottom: 10rem;
     font-family: $font1;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
   }
 }

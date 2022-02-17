@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import Card from './ Card';
 
 const Form = () => {
   const [moviesData, setMoviesData] = useState([]);
@@ -7,7 +8,7 @@ const Form = () => {
   useEffect(() => {
     axios
       .get(
-        'https://api.themoviedb.org/3/search/movie?api_key=cb86069fc97109e4478b8eb2ec3f2576&query=$star&language=fr-FR`'
+        'https://api.themoviedb.org/3/movie/popular?api_key=cb86069fc97109e4478b8eb2ec3f2576&language=fr-FR`'
       )
       .then((res) => setMoviesData(res.data.results));
   }, []);
@@ -17,7 +18,7 @@ const Form = () => {
       <div className="formContainer">
         <form action="">
           <input type="text" placeholder="Cherchez un film" id="searchInput" />
-          <input type="submit" placeholder="Go" />
+          <input type="submit" value="Go" />
         </form>
         <div className="btnSortContainer">
           <div className="btnText">Classement</div>
@@ -30,8 +31,8 @@ const Form = () => {
         </div>
       </div>
       <div className="result">
-        {moviesData.map((movie) => (
-          <h2 key={movie.id}>{movie.title}</h2>
+        {moviesData.slice(0, 12).map((movie) => (
+          <Card key={movie.id} movie={movie} />
         ))}
       </div>
     </div>
