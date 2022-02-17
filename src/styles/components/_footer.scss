@@ -1,0 +1,41 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-top: 2rem;
+  width: 100%;
+  border-top: 1px solid #7a1e1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .footerItems {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 40px;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .footerText {
+    display: flex;
+    flex-direction: column;
+    margin: 0.75rem 0;
+  }
+
+  .footerLinks {
+    display: flex;
+    gap: 0.5rem;
+
+    a {
+      font-size: 1.75rem;
+      -webkit-transition: 0.1s linear;
+      transition: 0.1s linear;
+    }
+
+    a:hover {
+      color: #7a1e1e;
+    }
+  }
+}
