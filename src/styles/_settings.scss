@@ -16,15 +16,14 @@ $color4: #e03838;
 }
 
 body {
-  margin: 0 20%;
-  max-width: 1296px;
-  font-family: $font1;
+  font-family: $font2;
   color: $color3;
   background-color: $color2;
 }
 
 .fav,
 .home {
+  margin: 0 20%;
   position: relative;
   min-height: 100vh;
 }
