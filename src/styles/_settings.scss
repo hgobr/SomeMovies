@@ -19,6 +19,10 @@ body {
   font-family: $font2;
   color: $color3;
   background-color: $color2;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scroll-behavior: smooth;
 }
 
 .fav,
