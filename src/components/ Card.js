@@ -76,6 +76,16 @@ const Card = ({ movie }) => {
     return genreArray.map((genre) => <li key={genre}>{genre}</li>);
   };
 
+  const addStorage = () => {
+    let storedMovies = window.localStorage.movies
+      ? window.localStorage.movies.split(',')
+      : [];
+    if (!storedMovies.includes(movie.id.toString())) {
+      storedMovies.push(movie.id);
+      window.localStorage.movies = storedMovies;
+    }
+  };
+
   return (
     <div className="card">
       <img
@@ -95,7 +105,13 @@ const Card = ({ movie }) => {
         )}
         <h4>{movie.vote_average}/10 🌟</h4>
         <ul>{genreList()}</ul>
-        <div className="btn">
+        <div
+          className="btn"
+          onClick={(e) => {
+            addStorage();
+            e.currentTarget.classList.toggle('liked');
+          }}
+        >
           <FontAwesomeIcon icon={faStar} />
         </div>
       </div>
