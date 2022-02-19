@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const Card = ({ movie }) => {
   const dateFormat = (date) => {
@@ -86,6 +87,13 @@ const Card = ({ movie }) => {
     }
   };
 
+  const deleteStorage = () => {
+    let storedData = window.localStorage.movies.split(',');
+
+    let newData = storedData.filter((id) => id != movie.id);
+
+    window.localStorage.movies = newData;
+  };
   return (
     <div className="card">
       <img
@@ -104,16 +112,34 @@ const Card = ({ movie }) => {
           ''
         )}
         <h4>{movie.vote_average}/10 🌟</h4>
-        <ul>{genreList()}</ul>
-        <div
-          className="btn"
-          onClick={(e) => {
-            addStorage();
-            e.currentTarget.classList.toggle('liked');
-          }}
-        >
-          <FontAwesomeIcon icon={faStar} />
-        </div>
+        <ul>
+          {movie.genre_ids
+            ? genreList()
+            : movie.genres.map((genre, index) => (
+                <li key={index}>{genre.name}</li>
+              ))}
+        </ul>
+        {movie.genre_ids ? (
+          <div
+            className="btn"
+            onClick={(e) => {
+              addStorage();
+              e.currentTarget.classList.toggle('liked');
+            }}
+          >
+            <FontAwesomeIcon icon={faStar} />
+          </div>
+        ) : (
+          <div
+            className="btn delete"
+            onClick={() => {
+              deleteStorage();
+              window.location.reload();
+            }}
+          >
+            <FontAwesomeIcon icon={faXmark} />
+          </div>
+        )}
       </div>
     </div>
   );
